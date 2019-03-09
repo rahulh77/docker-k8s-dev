@@ -1,0 +1,9 @@
+version: '3'
+services:
+  redis-server:
+    image: 'redis' # Use image from docker-hub
+  simpleapp:
+    restart: always
+    build: . # Use the current directory to build the image for simpleapp.
+    ports:
+      - '4001:8080'
