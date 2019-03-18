@@ -1,0 +1,9 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t reactfrontend -f Dockerfile.dev .
+
+script:
+  - docker run reactfrontend npm run test -- --coverage
