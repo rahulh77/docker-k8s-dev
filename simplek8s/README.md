@@ -5,3 +5,5 @@
 
 ## Browse 
 ### `http://localhost:31515`
+### OR
+### `<IP from ifconfig en0>:31515`

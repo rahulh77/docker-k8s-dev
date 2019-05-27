@@ -1,3 +1,7 @@
+# container file
+# Prefer deployments over pods
+# Rarely used directly in production (because of limitation around updating config to update pod name, port, number of pods etc)
+
 apiVersion: v1
 kind: Pod
 metadata:
@@ -10,4 +14,3 @@ spec:
       image: stephengrider/multi-client
       ports:
         - containerPort: 3000
-        
