@@ -6,6 +6,7 @@ kubectl version
 kubectl cluster-info
 kubectl apply -f first-pod.yaml
 kubectl -it exec webapp sh
+kubectl logs <podname> # logs are only available on pods.
 ```
 
 Pods are not visible outside the cluster. Need a service to interact.
